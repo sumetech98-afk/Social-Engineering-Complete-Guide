@@ -1,0 +1,743 @@
+<!-- ===== SOCIAL ENGINEERING GUIDE - CYBERSUME FULL SCREEN BLACK EDITION ===== -->
+<!-- Isko Blogger Post Editor mein HTML mode mein paste karein -->
+
+<style>
+    /* ===== FULL SCREEN WRAPPER ===== */
+    .cyber-post-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 30px 40px 50px !important;
+        background: #000000 !important;
+        color: #ffffff;
+        border-radius: 0 !important;
+        box-sizing: border-box;
+        min-height: 100vh;
+    }
+    
+    @media (max-width: 1200px) {
+        .cyber-post-wrapper { padding: 25px 35px 45px !important; }
+    }
+    @media (max-width: 992px) {
+        .cyber-post-wrapper { padding: 22px 30px 40px !important; }
+    }
+    @media (max-width: 768px) {
+        .cyber-post-wrapper { padding: 18px 22px 35px !important; }
+    }
+    @media (max-width: 600px) {
+        .cyber-post-wrapper { padding: 15px 18px 30px !important; }
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper { padding: 12px 14px 25px !important; }
+    }
+    
+    .cyber-content {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    /* ===== POST HEADER ===== */
+    .post-header-cyber {
+        margin-bottom: 35px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid rgba(0, 255, 136, 0.1);
+        text-align: center;
+    }
+    
+    .post-badge {
+        display: inline-block;
+        padding: 6px 26px;
+        background: rgba(0, 255, 136, 0.08);
+        border: 1px solid #ff6b6b;
+        border-radius: 50px;
+        color: #ff6b6b;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    
+    .post-title-cyber {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 1.15;
+        color: #ffffff !important;
+        margin: 12px 0 18px;
+        letter-spacing: -0.5px;
+        text-align: center;
+    }
+    
+    .post-title-cyber strong {
+        color: #ff6b6b;
+    }
+    
+    .post-description {
+        color: #b0b8c8;
+        font-size: 17px;
+        line-height: 1.8;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    @media (max-width: 992px) {
+        .post-title-cyber { font-size: 30px; }
+    }
+    @media (max-width: 768px) {
+        .post-title-cyber { font-size: 24px; }
+        .post-description { font-size: 15px; }
+    }
+    @media (max-width: 480px) {
+        .post-title-cyber { font-size: 20px; }
+    }
+    
+    /* ===== HEADINGS ===== */
+    .cyber-post-wrapper h2 {
+        color: #ffffff !important;
+        font-size: 26px;
+        font-weight: 800;
+        margin-top: 40px;
+        margin-bottom: 16px;
+        border-left: 5px solid #ff6b6b;
+        padding-left: 18px;
+        line-height: 1.3;
+    }
+    
+    .cyber-post-wrapper h3 {
+        color: #ff6b6b !important;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 25px 0 12px;
+    }
+    
+    .cyber-post-wrapper h4 {
+        color: #ffcc00 !important;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 20px 0 10px;
+    }
+    
+    @media (max-width: 768px) {
+        .cyber-post-wrapper h2 { font-size: 22px; padding-left: 14px; }
+        .cyber-post-wrapper h3 { font-size: 18px; }
+        .cyber-post-wrapper h4 { font-size: 15px; }
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper h2 { font-size: 19px; padding-left: 12px; margin-top: 30px; }
+        .cyber-post-wrapper h3 { font-size: 16px; }
+        .cyber-post-wrapper h4 { font-size: 14px; }
+    }
+    
+    /* ===== PARAGRAPHS ===== */
+    .cyber-post-wrapper p {
+        color: #b0b8c8 !important;
+        font-size: 17px;
+        line-height: 1.9;
+        margin: 14px 0 18px;
+    }
+    .cyber-post-wrapper p strong { color: #ff6b6b; }
+    @media (max-width: 768px) { .cyber-post-wrapper p { font-size: 16px; line-height: 1.8; } }
+    @media (max-width: 480px) { .cyber-post-wrapper p { font-size: 15px; line-height: 1.7; margin: 12px 0 14px; } }
+    
+    /* ===== LISTS ===== */
+    .cyber-post-wrapper ul, .cyber-post-wrapper ol {
+        color: #b0b8c8 !important;
+        font-size: 16px;
+        line-height: 2.2;
+        padding-left: 0;
+        margin: 12px 0 18px;
+        list-style: none;
+    }
+    .cyber-post-wrapper ul li, .cyber-post-wrapper ol li {
+        color: #b0b8c8 !important;
+        margin-bottom: 3px;
+        padding-left: 26px;
+        position: relative;
+    }
+    .cyber-post-wrapper ul li::before {
+        content: "▸";
+        color: #ff6b6b;
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .cyber-post-wrapper ol {
+        counter-reset: item;
+    }
+    .cyber-post-wrapper ol li {
+        counter-increment: item;
+        padding-left: 32px;
+    }
+    .cyber-post-wrapper ol li::before {
+        content: counter(item) ".";
+        color: #ff6b6b;
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+        font-size: 15px;
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper ul, .cyber-post-wrapper ol { font-size: 15px; line-height: 2; }
+        .cyber-post-wrapper ul li { padding-left: 22px; }
+        .cyber-post-wrapper ol li { padding-left: 28px; }
+    }
+    
+    /* ===== CODE BLOCKS ===== */
+    .code-block {
+        margin: 12px 0 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #0a0a0a;
+        border: 1px solid rgba(0, 255, 136, 0.06);
+    }
+    .code-header {
+        background: #0d0d0d;
+        padding: 8px 18px;
+        border-bottom: 1px solid rgba(0, 255, 136, 0.05);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    .code-header span:first-child {
+        color: #ff6b6b;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .code-header span:last-child {
+        color: #6a7290;
+        font-size: 11px;
+    }
+    .code-block pre {
+        background: #000000;
+        padding: 18px 22px;
+        border-radius: 0;
+        overflow-x: auto;
+        margin: 0;
+        border: none;
+    }
+    .code-block pre code {
+        color: #b0b8c8;
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        line-height: 1.8;
+        background: transparent;
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    .code-block pre code .cmd { color: #00ff88; }
+    .code-block pre code .flag { color: #ffcc00; }
+    .code-block pre code .target { color: #00d9ff; }
+    .code-block pre code .comment { color: #6a7290; font-style: italic; }
+    .code-block pre code .var { color: #ff6b6b; }
+    .code-block pre code .string { color: #00d9ff; }
+    @media (max-width: 480px) {
+        .code-block pre { padding: 14px 14px; }
+        .code-block pre code { font-size: 12px; line-height: 1.7; }
+        .code-header { padding: 6px 14px; }
+        .code-header span:first-child { font-size: 12px; }
+    }
+    
+    /* ===== TABLE ===== */
+    .cyber-post-wrapper table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #0a0a0a;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 255, 136, 0.06);
+        margin: 15px 0 22px;
+        font-size: 14px;
+    }
+    .cyber-post-wrapper table thead tr { background: #ff6b6b; }
+    .cyber-post-wrapper table thead tr th {
+        padding: 12px 18px;
+        text-align: left;
+        font-weight: 700;
+        font-size: 14px;
+        color: #000000;
+    }
+    .cyber-post-wrapper table tbody tr { border-bottom: 1px solid rgba(0, 255, 136, 0.03); }
+    .cyber-post-wrapper table tbody tr:last-child { border-bottom: none; }
+    .cyber-post-wrapper table tbody tr td {
+        padding: 10px 18px;
+        color: #b0b8c8;
+        font-size: 14px;
+    }
+    @media (max-width: 768px) {
+        .cyber-post-wrapper table { font-size: 13px; }
+        .cyber-post-wrapper table thead tr th { padding: 8px 12px; font-size: 12px; }
+        .cyber-post-wrapper table tbody tr td { padding: 8px 12px; font-size: 12px; }
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper table { font-size: 12px; }
+        .cyber-post-wrapper table thead tr th { padding: 6px 10px; font-size: 11px; }
+        .cyber-post-wrapper table tbody tr td { padding: 6px 10px; font-size: 11px; }
+    }
+    
+    /* ===== FEATURED BOX ===== */
+    .featured-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 25px;
+        background: #0a0a0a;
+        border: 1px solid rgba(0, 255, 136, 0.08);
+        border-radius: 14px;
+        padding: 22px 28px;
+        margin: 20px 0 30px;
+        justify-content: center;
+    }
+    .featured-box .featured-image img {
+        max-width: 160px;
+        height: auto;
+        border-radius: 12px;
+        border: 2px solid #ff6b6b;
+        transition: 0.3s;
+    }
+    .featured-box .featured-image img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 30px rgba(255, 107, 107, 0.15);
+    }
+    .featured-box .featured-cta { flex: 1; text-align: center; }
+    .featured-box .featured-cta p { color: #b0b8c8 !important; margin: 5px 0 10px !important; font-size: 15px; }
+    .featured-box .featured-cta .btn {
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #ff6b6b, #cc0000);
+        color: #000000;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .featured-box .featured-cta .btn:hover {
+        transform: scale(1.04);
+        box-shadow: 0 0 30px rgba(255, 107, 107, 0.2);
+    }
+    .featured-box .price-tag {
+        display: inline-block;
+        padding: 3px 16px;
+        border-radius: 50px;
+        background: rgba(255, 204, 0, 0.1);
+        border: 1px solid #ffcc00;
+        color: #ffcc00;
+        font-size: 13px;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+    @media (max-width: 600px) {
+        .featured-box { flex-direction: column; text-align: center; padding: 18px; }
+        .featured-box .featured-image img { max-width: 140px; }
+        .featured-box .featured-cta .btn { width: 100%; }
+    }
+    
+    /* ===== RED FLAGS BOX ===== */
+    .redflag-box {
+        background: rgba(255, 107, 107, 0.05);
+        border-left: 4px solid #ff6b6b;
+        padding: 16px 22px;
+        margin: 16px 0 22px;
+        border-radius: 0 10px 10px 0;
+    }
+    .redflag-box p { color: #ff6b6b !important; font-size: 15px; margin: 0 !important; }
+    @media (max-width: 480px) {
+        .redflag-box { padding: 14px 16px; }
+        .redflag-box p { font-size: 13.5px; }
+    }
+    
+    /* ===== TIP BOX ===== */
+    .tip-box {
+        background: rgba(0, 217, 255, 0.03);
+        border-left: 4px solid #00d9ff;
+        padding: 16px 22px;
+        margin: 16px 0 22px;
+        border-radius: 0 10px 10px 0;
+    }
+    .tip-box p { color: #00d9ff !important; font-size: 15px; margin: 0 !important; }
+    @media (max-width: 480px) {
+        .tip-box { padding: 14px 16px; }
+        .tip-box p { font-size: 13.5px; }
+    }
+    
+    /* ===== DEFENSE BOX ===== */
+    .defense-box {
+        background: rgba(0, 255, 136, 0.03);
+        border: 1px solid rgba(0, 255, 136, 0.08);
+        border-radius: 12px;
+        padding: 18px 24px;
+        margin: 16px 0 22px;
+    }
+    .defense-box p {
+        color: #b0b8c8 !important;
+        font-size: 15px;
+        margin: 4px 0 !important;
+    }
+    .defense-box .check { color: #00ff88; font-weight: 700; }
+    @media (max-width: 480px) {
+        .defense-box { padding: 14px 16px; }
+        .defense-box p { font-size: 14px; }
+    }
+    
+    /* ===== HORIZONTAL RULE ===== */
+    .cyber-post-wrapper hr {
+        border: none;
+        border-top: 1px solid rgba(0, 255, 136, 0.06);
+        margin: 30px 0 32px;
+        background: transparent;
+        height: 1px;
+    }
+    
+    /* ===== SHARE SECTION ===== */
+    .share-section {
+        margin-top: 50px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(0, 255, 136, 0.08);
+    }
+    .share-section p {
+        color: #6a7290 !important;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 16px !important;
+    }
+    .share-buttons {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .share-buttons a {
+        padding: 12px 28px;
+        border: 1px solid rgba(0, 255, 136, 0.12);
+        border-radius: 10px;
+        color: #b0b8c8 !important;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        transition: 0.3s;
+        background: transparent;
+    }
+    .share-buttons a:hover {
+        border-color: #ff6b6b;
+        color: #ff6b6b !important;
+        background: rgba(255, 107, 107, 0.04);
+        transform: translateY(-2px);
+    }
+    @media (max-width: 480px) {
+        .share-buttons a { padding: 10px 18px; font-size: 13px; }
+        .share-section { margin-top: 35px; padding-top: 22px; }
+    }
+    
+    /* ===== BLOGGER OVERRIDES ===== */
+    .blog-posts { max-width: 100% !important; padding: 0 !important; }
+    .post-body { padding: 0 !important; background: #000000 !important; }
+    .post-body-content { background: #000000 !important; padding: 0 !important; }
+    .post-outer { background: #000000 !important; padding: 0 !important; margin: 0 !important; border: none !important; box-shadow: none !important; }
+    .post { background: #000000 !important; padding: 0 !important; margin: 0 !important; border: none !important; box-shadow: none !important; }
+    
+    /* ===== LINK STYLES ===== */
+    .cyber-post-wrapper a { color: #ff6b6b; text-decoration: none; transition: 0.3s; }
+    .cyber-post-wrapper a:hover { color: #ff8888; text-decoration: underline; }
+    .text-center { text-align: center; }
+</style>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="cyber-post-wrapper">
+
+    <div class="cyber-content">
+
+        <!-- ===== POST HEADER ===== -->
+        <div class="post-header-cyber">
+            <div class="post-badge">🎭 Social Engineering</div>
+            <h1 class="post-title-cyber">Social Engineering <strong>Complete Guide</strong></h1>
+            <p class="post-description">
+                The art of manipulating people — Understanding, identifying, and defending against social engineering attacks.
+            </p>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- INTRODUCTION -->
+        <!-- ============================================================ -->
+        <h2>Introduction to Social Engineering</h2>
+
+        <p>
+            Social engineering is the part of <strong>cybersecurity course</strong> and the <strong>art of manipulating people</strong> into divulging confidential information or performing actions that compromise security. It exploits <strong>human psychology</strong> rather than technical vulnerabilities.
+        </p>
+
+        <h3>Why It Works</h3>
+        <ul>
+            <li><strong>98% of cyberattacks</strong> involve social engineering (IBM)</li>
+            <li>Humans are the <strong>weakest link</strong> in security</li>
+            <li><strong>Low-cost, high-reward</strong> for attackers</li>
+        </ul>
+
+        <div class="featured-box">
+            <div class="featured-image">
+                <a href="https://www.amazon.com/dp/B0GTYGBHF5" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZyoP_fnwLHN4AG6rY-UyD-atAV0LM2iG28sJIA6SkO0rYbMotKp7RME1fsqDDZu25S6GMbpbFqo64r2RnklmEvuLHb3o6X2soCsbRUGVXRWZNk_9OZ028nwM7w6h4BnHbPKWPai0_90Nza7gqP-RAwO3eS6UVLPgHOh9F7pmslme9cLdlayDli7fKSe0N/s320/image.png" alt="Social Engineering Book"/>
+                </a>
+                
+            </div>
+            <div class="featured-cta">
+                <p>📚 <strong style="color:#ff6b6b;">Get Your Copy Today!</strong></p>
+                <a class="btn" href="https://www.amazon.com/dp/B0GTYGBHF5" target="_blank">🛒 Buy Now on Amazon</a>
+            </div>
+        </div>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- TYPES OF ATTACKS -->
+        <!-- ============================================================ -->
+        <h2>Types of Social Engineering Attacks</h2>
+
+        <h3>1. Phishing (Most Common)</h3>
+        <ul>
+            <li><strong>Deceptive emails/messages</strong> pretending to be legitimate</li>
+            <li><strong>Goals:</strong> Steal credentials, spread malware, financial fraud</li>
+        </ul>
+
+        <h4>Types:</h4>
+        <ul>
+            <li><strong>Email phishing</strong> — Fake invoices, "urgent" requests</li>
+            <li><strong>Spear phishing</strong> — Targeted at individuals</li>
+            <li><strong>Whaling</strong> — Targets executives</li>
+            <li><strong>Smishing</strong> — SMS phishing</li>
+            <li><strong>Vishing</strong> — Voice call phishing</li>
+        </ul>
+
+        <h3>2. Pretexting</h3>
+        <ul>
+            <li>Creating a fabricated scenario to obtain information</li>
+            <li>Example: "IT support" calling to "verify your password"</li>
+        </ul>
+
+        <h3>3. Baiting</h3>
+        <ul>
+            <li>Offering something enticing (free software, USB drops)</li>
+            <li>Often contains malware</li>
+        </ul>
+
+        <h3>4. Quid Pro Quo</h3>
+        <ul>
+            <li>"Exchange" of services (e.g., "free tech support" for login details)</li>
+        </ul>
+
+        <h3>5. Tailgating/Piggybacking</h3>
+        <ul>
+            <li>Physically following someone into restricted areas</li>
+        </ul>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- PHISHING BREAKDOWN -->
+        <!-- ============================================================ -->
+        <h2>Phishing: Step-by-Step Attack Breakdown</h2>
+
+        <h3>Phase 1: Reconnaissance</h3>
+        <ul>
+            <li>Research targets (LinkedIn, company website)</li>
+            <li>Gather emails (Hunter.io, phonebook)</li>
+            <li>Study communication style</li>
+        </ul>
+
+        <h3>Phase 2: Crafting the Attack</h3>
+
+        <h4>A. Email Phishing Example</h4>
+        <div class="code-block">
+            <div class="code-header">
+                <span>📧 Phishing Email</span>
+                <span>Example</span>
+            </div>
+            <pre><code><span class="var">From:</span> "Amazon Support" &lt;support@amazon-security.com&gt;
+<span class="var">Subject:</span> Urgent: Unusual Login Attempt
+
+Dear Customer,
+
+We detected a login from Nigeria (IP: 196.xxx.xxx).
+Click here to verify your account: http://amazon-verify.com/login
+
+- Amazon Security Team</code></pre>
+        </div>
+
+        <div class="redflag-box">
+            <p>🚩 <strong>Red Flags:</strong> Fake domain (`amazon-verify.com`) · Urgency + fear tactics · Suspicious link</p>
+        </div>
+
+        <h4>B. Clone Phishing</h4>
+        <ol>
+            <li>Hack a real email thread</li>
+            <li>Replace attachments/links with malicious ones</li>
+        </ol>
+
+        <h3>Phase 3: Delivery</h3>
+        <ul>
+            <li>Send via email, SMS, or social media</li>
+            <li>Use URL shorteners (bit.ly) to hide malicious links</li>
+            <li>Spoof sender addresses (Easy with SMTP)</li>
+        </ul>
+
+        <h3>Phase 4: Exploitation</h3>
+        <ul>
+            <li><strong>Fake login pages</strong> — Steal credentials</li>
+            <li><strong>Malware downloads</strong> — RATs, keyloggers</li>
+            <li><strong>Financial scams</strong> — Gift cards, wire transfers</li>
+        </ul>
+
+        <h3>Phase 5: Post-Attack</h3>
+        <ul>
+            <li>Cover tracks (Delete logs)</li>
+            <li>Sell data on dark web</li>
+            <li>Use credentials for further attacks</li>
+        </ul>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- TOOLS -->
+        <!-- ============================================================ -->
+        <h2>Tools Used in Phishing</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tool</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gophish</td>
+                    <td>Open-source phishing framework</td>
+                </tr>
+                <tr>
+                    <td>SET (Social Engineer Toolkit)</td>
+                    <td>Automated phishing attacks</td>
+                </tr>
+                <tr>
+                    <td>King Phisher</td>
+                    <td>Realistic phishing campaigns</td>
+                </tr>
+                <tr>
+                    <td>Evilginx2</td>
+                    <td>Advanced phishing (MFA bypass)</td>
+                </tr>
+                <tr>
+                    <td>GoPhish</td>
+                    <td>Email template cloning</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- DEFENSE -->
+        <!-- ============================================================ -->
+        <h2>How to Defend Against Social Engineering</h2>
+
+        <h3>For Individuals</h3>
+        <div class="defense-box">
+            <p><span class="check">✔</span> Verify sender emails (Check domain spelling)</p>
+            <p><span class="check">✔</span> Hover over links before clicking</p>
+            <p><span class="check">✔</span> Enable <strong>MFA</strong> (Blocks 99% of phishing)</p>
+            <p><span class="check">✔</span> Don't trust urgency/fear messages</p>
+            <p><span class="check">✔</span> Report suspicious emails to IT</p>
+        </div>
+
+        <h3>For Organizations</h3>
+        <div class="defense-box">
+            <p><span class="check">✔</span> Employee training (Phishing simulations)</p>
+            <p><span class="check">✔</span> Email filtering (Mimecast, Proofpoint)</p>
+            <p><span class="check">✔</span> DMARC/DKIM/SPF (Prevent email spoofing)</p>
+            <p><span class="check">✔</span> Web filtering (Block malicious sites)</p>
+            <p><span class="check">✔</span> Incident response plan</p>
+        </div>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- ETHICAL TESTING -->
+        <!-- ============================================================ -->
+        <h2>Ethical Phishing Testing</h2>
+
+        <h3>Steps for Legal Phishing Tests:</h3>
+        <ol>
+            <li>Get <strong>written permission</strong></li>
+            <li>Use simulated domains (e.g., `company-security-test.com`)</li>
+            <li>Provide <strong>training after tests</strong></li>
+            <li>Never steal real data</li>
+        </ol>
+
+        <h3>Tools for Security Awareness:</h3>
+        <ul>
+            <li><strong>KnowBe4</strong> — Phishing simulations</li>
+            <li><strong>PhishMe</strong> — Now Cofense</li>
+            <li><strong>Microsoft Attack Simulator</strong></li>
+        </ul>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- CASE STUDIES -->
+        <!-- ============================================================ -->
+        <h2>Real-World Case Studies</h2>
+
+        <ol>
+            <li><strong>2016 DNC Hack</strong> — Russian spear phishing</li>
+            <li><strong>Twitter Bitcoin Scam</strong> — Celebrity accounts hacked via vishing</li>
+            <li><strong>Colonial Pipeline Attack</strong> — Compromised VPN via leaked password</li>
+        </ol>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- CONCLUSION -->
+        <!-- ============================================================ -->
+        <h2>Conclusion</h2>
+
+        <ul>
+            <li>Social engineering exploits <strong>human trust</strong> and best part of cybersecurity course</li>
+            <li>Phishing is the <strong>#1 attack vector</strong> (FBI IC3 Report)</li>
+            <li>Defense requires <strong>awareness + technology</strong></li>
+        </ul>
+
+        <h3>🔹 Next Steps</h3>
+
+        <ul>
+            <li><a href="https://www.cybersume.xyz/2025/03/cloud-security-iot-hacking.html" target="_blank"><strong>Module 10: Cloud Security &amp; IoT Hacking</strong></a></li>
+            <li>Try ethical phishing labs (TryHackMe)</li>
+            <li>Learn <strong>OSINT techniques</strong> for reconnaissance</li>
+            <li>Explore dark web monitoring tools</li>
+        </ul>
+
+        <div class="tip-box">
+            <p>🚀 Want a <strong>hands-on phishing lab walkthrough</strong>? Let me know!</p>
+        </div>
+
+        <hr/>
+
+        <!-- ===== SHARE SECTION ===== -->
+        <div class="share-section">
+            <p>📤 Share this social engineering guide with your network</p>
+            <div class="share-buttons">
+                <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Social%20Engineering%20Complete%20Guide%20-%20Understand%20and%20Defend%20Against%20Human%20Hacking!%20%23SocialEngineering%20%23CyberSecurity%20%23Phishing','_blank');return false;">
+                    🐦 Twitter
+                </a>
+                <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    📘 Facebook
+                </a>
+                <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    💼 LinkedIn
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
